@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>Add Author</title>
+    <link rel='stylesheet' href='style.css'>
+	</head>
+	<body>
+		<div class='topnav'>
+			<a href='index.html'>Home</a>
+			<a href='browse.php'>Browse</a>
+			<a href='search.php'>Search</a>
+			<div class='dropdown'>
+				<button href='#add' class='dropbtn'>Update
+					<i class='fa fa-caret-down'></i>
+				</button>
+				<div class='drop-content'>
+					<a href='add_author_form.html'>Add Author</a>
+					<a href='add_source_form.php'>Add Source</a>
+					<a href='modify_source_form.php'>Modify Source</a>
+					<a href='delete_source_form.php'>Delete Source</a>
+				</div>
+			</div>
+		</div>
+  <body>
+    <h1>Add an Author</h1>
+    <form action="add_author.php" method="post">
+      Author Name: <input type="text" name="author_name" /><br><br>
+      Author Nationality: <input type="text" name="author_nationality" /><br><br>
+      Author Date of Birth (YYYY, if known): <input type="text" name="author_birth" /><br><br>
+      Author Date of Death (YYYY, if known): <input type="text" name="author_death" /><br><br>
+      <input type="submit" />
+    </form>
+  </body>
+</html>

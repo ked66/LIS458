@@ -1,0 +1,33 @@
+<?php
+$host='canary.simmons.edu';
+$user='dillonk2';
+$password='4001755';
+$database='lis458olfa22_dillonk2_project';
+
+$con=
+mysqli_connect($host,$user,$password,$database)
+	or die ("Couldn't connect to server");
+
+echo "<html>
+  <head>
+    <title>Browse</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class='topnav'>
+      <a href='#index'>Home</a>
+      <a href='browse.html'>Browse</a>
+      <a href='#search'>Search</a>
+      <a href='#add'>Add</a>
+    </div>
+    <h1>Browse</h1>
+    <h2>By Author</h2>
+      <p>Select an author to see available sources they wrote. <br>
+         Select 'all' to see all authors, with the sources they wrote, listed alphabetically.
+      </p>
+    <h2>By Herb</h2>
+      <p>Under construction</p>
+    <h2>By Medical Indication/Illness</h2>
+      <p>Under construction</p>
+  </body>
+</html>
